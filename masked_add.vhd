@@ -99,7 +99,7 @@ last_inst: masked_full_adder
 
 -- TESTING
 
-helyes <= (a1i xor a2i xor a3i) + (b1i xor b2i xor b3i);
-teszt <= s1o xor s2o xor s3o;
+correct <= (a1i xor a2i xor a3i) + (b1i xor b2i xor b3i);
+testing <= s1o xor s2o xor s3o;
 
 end Behavioral;
