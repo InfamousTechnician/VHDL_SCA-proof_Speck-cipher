@@ -13,8 +13,8 @@ entity masked_add is
            s1o : inout STD_LOGIC_VECTOR (w downto 0);
            s2o : inout STD_LOGIC_VECTOR (w downto 0);
            s3o : inout STD_LOGIC_VECTOR (w downto 0);
-           helyes : out STD_LOGIC_VECTOR (w-1 downto 0);
-           teszt : out STD_LOGIC_VECTOR (w downto 0));
+           correct : out STD_LOGIC_VECTOR (w-1 downto 0);
+           testing : out STD_LOGIC_VECTOR (w downto 0));
 end masked_add;
 
 architecture Behavioral of masked_add is
