@@ -1,4 +1,4 @@
-Functionaql 16 bits wide Ladner Fischer adder.
+Functional 16 bits wide Ladner-Fischer adder.
 
 Next steps should be like:
 * to rewrite it recursively to support any bit width
