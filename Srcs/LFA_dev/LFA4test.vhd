@@ -12,7 +12,7 @@ architecture Behavioral of LFA4test is
         Port ( x : in STD_LOGIC_VECTOR (3 downto 0);
                y : in STD_LOGIC_VECTOR (3 downto 0);
                s : out STD_LOGIC_VECTOR (3 downto 0);
-               p, g : out STD_LOGIC);
+               p, g : inout STD_LOGIC);
     end component;
 
     signal x : STD_LOGIC_VECTOR (3 downto 0);
@@ -65,6 +65,13 @@ test <= '1' when s = (x + y) else '0';
         x <= x"9";
         wait for 1 ns; 
         x <= x"e";
+        wait for 1 ns;
+        
+        x <= "0101";
+        y <= "1010";
+        wait for 1 ns;
+        x <= "1001";
+        y <= "0111";
         wait for 1 ns;
         
         wait; 

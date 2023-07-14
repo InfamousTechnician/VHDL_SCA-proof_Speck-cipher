@@ -30,7 +30,7 @@ gi <= x and y;  -- and, bc. if both are 1, a carry is generated at that position
                 -- so a stage either generates or propagates a carry...(*)
 
 carry_op_inst0 : carry_operator port map(
-    propLi => '0',   --there is nothing to propagate without 'carry in'
+    propLi => pi(0),
     genrLi => gi(0),
     propHi => pi(1),
     genrHi => gi(1),
